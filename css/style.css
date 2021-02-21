@@ -3,13 +3,19 @@
 body {
   font-size: 16px;
   font-family: Montserrat, sans-serif;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  
 }
 
 .hero {
   align-items: center;
   background-image: url("../images/main-background.jpeg");
   background-size: cover;
-  display: flex;
   height: 100vh;
   justify-content: center;
   position: relative;
@@ -26,9 +32,12 @@ body {
   background-color: rgba(28, 162, 230, 0.3);
 }
 
-
 header {
-  display: inline;
+  position: relative;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -37,22 +46,43 @@ ul {
   padding: 0;
 }
 
+nav {
+  height: 100px;
+  background: lightgreen;
+}
+
+.nav-link {
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 700;
+  color: #;
+  font-size: 20px;
+  padding: 20px 25px 20px 20px;
+}
+
 .header-link {
   float: left;
   margin: 1em;
   text-decoration: none;
   color: #0D0099;
+  justify-content: flex-end;
 }
 
 .social-media {
-  height: 3rem;
+  height: 2rem;
+  padding: 10px;
+
 }
 
+main {
+  width: 100%;
+  display: flex;
+}
+ 
 
 h1, h2 {
-  position: relative;
+  justify-content: center;
   color: #ffffff;
-  line-height: 0.9;
+  line-height: 1;
   text-align: center;
 }
 
@@ -65,8 +95,6 @@ h2 {
   font-size: 3rem;
   font-weight: 400;
 }
-
-
 
 .btn {
   background: #804aff;
