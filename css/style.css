@@ -3,14 +3,13 @@ body {
   font-size: 16px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
+nav {
+  display: inline-block;
 }
 
 .hero {
   align-items: center;
-  background-image: url("../images/main-background.svg");
+  background-image: url("../images/main-background.jpeg");
   background-size: cover;
   display: flex;
   height: 100vh;
@@ -26,13 +25,13 @@ header {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(230, 199, 28, 0.2);
+  background-color: rgba(88, 78, 16, 0.4);
 }
 
 h1 {
   position: relative;
   color: #ffffff;
-  font-size: 14rem;
+  font-size: 9rem;
   line-height: 0.9;
   text-align: center;
 }
