@@ -1,0 +1,39 @@
+
+body {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  align-items: center;
+  background-image: url("../images/main-background.svg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(230, 199, 28, 0.2);
+}
+
+h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 14rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
