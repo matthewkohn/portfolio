@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
 	border: 0;
 	font-size: 100%;
 }
-
+/*
 .hero {
   align-items: center;
   background-image: url("../images/main-background.jpeg");
@@ -32,11 +32,11 @@ body {
   left: 0px;
   background-color: rgba(28, 162, 230, 0.3);
 }
-
+*/
 /* Header and navigation */
 
 header {
-  background:rgba(28, 162, 230, 0.5);
+  background:rgba(28, 162, 230, 0.2);
   margin: 0;
   top: 0;
 }
@@ -65,13 +65,12 @@ nav {
   font-size: 20px;
   padding: 20px 15px 20px 10px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
-.social-media {
-  height: 1.5rem;
-  padding: 0px;
-}
+
+
+
 
 
 /* main section */
@@ -81,29 +80,60 @@ main {
 }
  
 h1 {
-  font-size: 5rem;
+  font-size: 5.5vw;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2vw;
+}
+
+p.intro {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 2em;
+  text-align: left;
+  margin-left: 20vw;
+  height: 10vh;
 }
 
 #name {
-  line-height: 2;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: auto;   
-  color: #fff;
-  height: 20vh;
-  margin-top: 5rem;
+  text-align: center; 
+  color: #000;
+  height: 30vh;
+  margin: 5rem 0 0;
+  border: 1px solid black;
 }
 
 #title {
   font-weight: 400;
   text-align: center;
   margin: 100px 0;
-  justify-content: center;
-  color: #fff;
+  color: #000;
+  border: 1px dotted black;
 }
 
+
+div.social-container {
+  display: inline-flex; 
+}
+
+.social-icon {
+  background: #fff;
+  border: 2px solid blue;
+  border-radius: 10%;
+  height: 2.5em;
+  margin: 1em;
+  padding: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+  p.intro {
+    font-size: 1em
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.3em;
+    margin-top: -1em;
+  }
+}
