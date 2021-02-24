@@ -125,6 +125,28 @@ div.social-container {
   padding: 3px;
 }
 
+a.drumkit-link {
+  height: 100px;
+}
+
+img.drumkit-screenshot {
+  width: 400px;
+  height: auto;
+}
+
+img.form-validator-screenshot {
+  width: auto;
+  height: 300px;
+}
+
+img.exchange-rate-screenshot {
+  width: auto;
+  height: 300px;
+}
+
+
+/* Responsive display settings */
+
 @media only screen and (max-width: 800px) {
   p.intro {
     font-size: 1em
