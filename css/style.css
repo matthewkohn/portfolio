@@ -58,7 +58,6 @@ footer {
 
 nav {
   display: flex;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -68,7 +67,7 @@ nav {
   flex-flow: row wrap;
   justify-content: flex-end;
   height: 10vh;
-  min-height: 50px;
+  min-height: 60px;
   width: 95%;
 }
 
@@ -93,7 +92,7 @@ header p:first-of-type {
 
 .text-link-container {
   display: flex;
-  width: 50%;
+  width: 30%;
   justify-content: space-around;
 }
 
@@ -101,8 +100,9 @@ header p:first-of-type {
   font-family: Montserrat, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.25em;
-  padding: 30px 0 10px;
+  /* padding: 30px 0 10px; */
   text-decoration: none;
+  padding: 18px 15px;
 }
 
 .text-link:hover {
@@ -110,10 +110,17 @@ header p:first-of-type {
   background:rgb(28, 163, 230, 0.6);
   border: 1px solid rgba(13, 7, 66, .6);
   border-radius: 30px;
-  transform: scale(1.2);
-  transition: 300ms;
-  padding: 18px 10px;
-  margin: 18px;
+  
+  padding: 18px 15px;
+
+  transition: color 300ms ease-in-out 50ms,
+    background 300ms ease-in-out 50ms,
+    border 400ms ease-in,
+    border-radius 500ms ease-in-out 50ms,
+    margin-left 0ms,
+    padding 0ms ease-in-out;
+  
+
 }
 
 
@@ -278,12 +285,24 @@ a.code-link:hover {
 }
 
 
+/* Contact Page styling */
+
+.contact-container {
+  background: yellow;
+}
+
+#contact {
+  font-family: "Kaushan Script", 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
 /* Responsive display settings */
 
 @media only screen and (max-width: 800px) {
-  .hero {
-    height: 50vh;
-  }
   .header-nav {
     transform: scale(0.6);
     padding-bottom: 20px;
@@ -295,6 +314,9 @@ a.code-link:hover {
   }
   p.intro {
     font-size: 1em
+  }
+  .title {
+    color: #ffffff;
   }
   h1 {
     font-size: 3em;
@@ -322,16 +344,18 @@ a.code-link:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
   header p:first-of-type {
     padding-right: 1vw;
+  }
+  .header-nav {
+    flex-flow: column wrap;
   }
   p.intro {
     padding-top: 50px;
   }
   .title {
     padding-top: 40px;
-    color: #fff;
   }
   #projects {
     padding-top: 50px;
@@ -352,7 +376,7 @@ a.code-link:hover {
     padding: 0 10vw;
   }
   .text-link:hover {
-    padding: 5px 20px;
+    padding: 1.5vh 10vw;
   }
   .social-icon {
     margin: 0 20px;
@@ -367,5 +391,13 @@ a.code-link:hover {
     display: flex;
     flex-flow: column nowrap;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .project-card h4 {
+    font-size: 1em;
+    text-align: center;
+    padding: 0;
   }
 }
