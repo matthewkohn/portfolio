@@ -18,7 +18,7 @@ html, body {
   align-items: center;
   background-image: url("../images/main-background.jpeg");
   background-size: cover;
-  height: 105vh;
+  height: 90vh;
   justify-content: center;
   position: relative;
   width: 100%;
@@ -63,14 +63,14 @@ nav {
   padding: 0;
 }
 
-/* .header-nav {
+.header-nav {
   align-content: center;
   flex-flow: row wrap;
   justify-content: flex-end;
   height: 10vh;
   min-height: 50px;
   width: 95%;
-} */
+}
 
 
 
@@ -169,7 +169,7 @@ img.screenshot:hover {
 .code-button:hover {
   background-color:rgba(14, 230, 25, 0.1);
   border: 2px double rgb(23, 230, 0);
-  font-size: 1.4em;
+  font-size: 1.3em;
   padding: 8px 50px;
   transition: 
     border 300ms ease-in-out 50ms,
@@ -200,15 +200,16 @@ a.code-link:hover {
 .nav-container {
   display: inline-flex;
   align-items: center;
-  width: 70%;
+  width: 50%;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .nav-link {
   font-family: Montserrat, Arial, sans-serif;
   font-weight: 700;
   font-size: 1.25em;
-  padding: 40px;
+  padding: 30px;
   text-decoration: none;
 }
 
@@ -218,7 +219,7 @@ a.code-link:hover {
   border: 1px solid rgba(13, 7, 66, .6);
   border-radius: 30px;
   transform: scale(1.2);
-  transition: 500ms;
+  transition: 300ms;
   padding: 20px;
   margin: 18px;
 }
@@ -254,6 +255,9 @@ a.code-link:hover {
 /* Responsive display settings */
 
 @media only screen and (max-width: 800px) {
+  .hero {
+    height: 50vh;
+  }
   p.intro {
     font-size: 1em
   }
@@ -268,9 +272,10 @@ a.code-link:hover {
     font-size: 1.2em;
   }
   img.screenshot {
-    width: 20vw;
+    width: 30vw;
   }
   #projects {
     font-size: 3em;
+    padding-top: 10vh;
   }
 }
