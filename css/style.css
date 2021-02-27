@@ -41,7 +41,6 @@ html, body {
     rgba(255, 255, 0, 0.15),
     rgba(14, 230, 25, 0.15)
     );
-
 }
 
 #page-container {
@@ -49,12 +48,9 @@ html, body {
   min-height: 100vh;
 }
 
-/* Header and navigation */
 
-.main-header,
-footer {
-  background:rgba(28, 162, 230, 0.3);
-}
+/* Header, Footer, and Navigation */
+
 
 nav {
   display: flex;
@@ -71,7 +67,10 @@ nav {
   width: 95%;
 }
 
-/* Header/Footer shared and Navigation */
+.main-header,
+footer {
+  background:rgba(28, 162, 230, 0.3);
+}
 
 header p:first-of-type {
   padding-right: 10vw;
@@ -108,17 +107,16 @@ header p:first-of-type {
 .text-link:hover {
   color: #ffffff;
   background:rgb(28, 163, 230, 0.6);
-  border: 1px solid rgba(13, 7, 66, .6);
+  /* border: 1px solid rgba(13, 7, 66, .6); */
   border-radius: 30px;
   padding: 18px 15px;
   transition: color 300ms ease-in-out 50ms,
     background 300ms ease-in-out 50ms,
-    border 400ms ease-in,
+    /* border 400ms ease-in, */
     border-radius 500ms ease-in-out 50ms,
     margin-left 0ms,
     padding 0ms ease-in-out;
 }
-
 
 .social-container {
   display: flex;
@@ -178,7 +176,6 @@ h2 {
 h4 {
   font-size: 2rem;
   margin: 10px;
-  
 }
 
 p.intro {
@@ -198,12 +195,10 @@ p.intro {
   font-weight: 400;
   margin: 0;
   height: 10vh;
-
 }
 
 
-
-/* Project styling */
+/* Project Section */
 
 .project-container {
   background: rgba(13, 7, 66, 1);
@@ -258,6 +253,7 @@ img.screenshot:hover {
   padding: 10px;
   margin: 15px 0;
 }
+
 .code-button:hover {
   background-color:rgba(14, 230, 25, 0.1);
   border: 2px double rgb(23, 230, 0);
@@ -292,12 +288,21 @@ a.code-link:hover {
 
 .header-container {
   background: rgba(230, 222, 5, 0.85);
+  border-bottom: 2px groove rgba(13, 7, 66, 1);
+  height: 25vh;
+  max-height: 200px;
+}
+
+.header-container a {
+  color:rgba(13, 7, 66, 1);
+  align-items: center;
 }
 
 #contact {
   font-family: "Kaushan Script", 'Courier New', Courier, monospace;
   margin: 0;
-  padding: 5vw 0 0 2vw;
+  padding-left: 1em;
+  font-size: 4vw;
 }
 
 .contact-header-rule {
@@ -329,10 +334,10 @@ a.code-link:hover {
   .title {
     color: #ffffff;
   }
-  h1 {
+  h1 #contact{
     font-size: 3em;
   }
-  h2 {
+  h2,  {
     font-size: 1.3em;
     margin: 0;
   }
