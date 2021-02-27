@@ -12,6 +12,7 @@ html, body {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+  color: rgba(13, 7, 66, 1)
 }
 
 .hero {
@@ -40,7 +41,7 @@ html, body {
     rgba(255, 255, 0, 0.15),
     rgba(14, 230, 25, 0.15)
     );
-  /* background-color: rgba(14, 230, 25, 0.1); */
+
 }
 
 #page-container {
@@ -50,10 +51,9 @@ html, body {
 
 /* Header and navigation */
 
-header,
+.main-header,
 footer {
-  background:rgba(28, 162, 230, 0.2);
-  color: rgba(13, 7, 66, 1);
+  background:rgba(28, 162, 230, 0.3);
 }
 
 nav {
@@ -110,17 +110,13 @@ header p:first-of-type {
   background:rgb(28, 163, 230, 0.6);
   border: 1px solid rgba(13, 7, 66, .6);
   border-radius: 30px;
-  
   padding: 18px 15px;
-
   transition: color 300ms ease-in-out 50ms,
     background 300ms ease-in-out 50ms,
     border 400ms ease-in,
     border-radius 500ms ease-in-out 50ms,
     margin-left 0ms,
     padding 0ms ease-in-out;
-  
-
 }
 
 
@@ -237,7 +233,7 @@ p.intro {
 }
 
 .project-card h4 {
-  padding: 1vh
+  padding: 1vh;
 }
 
 #projects {
@@ -288,11 +284,26 @@ a.code-link:hover {
 /* Contact Page styling */
 
 .contact-container {
-  background: yellow;
+  background-image: linear-gradient(to bottom,
+  rgba(0, 89, 255, 0.6),
+    rgba(13, 7, 66, 1));
+    height: 100vh;
+}
+
+.header-container {
+  background: rgba(230, 222, 5, 0.85);
 }
 
 #contact {
   font-family: "Kaushan Script", 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 5vw 0 0 2vw;
+}
+
+.contact-header-rule {
+  border: 4px solid rgba(13, 7, 66, 1);
+  border-radius: 6px;
+  margin: 0 2vw
 }
 
 
@@ -399,5 +410,11 @@ a.code-link:hover {
     font-size: 1em;
     text-align: center;
     padding: 0;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  #title {
+    padding-top: 100px;
   }
 }
