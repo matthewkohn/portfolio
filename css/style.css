@@ -158,6 +158,13 @@ header p:first-of-type {
   padding-bottom: 1em;
 }
 
+.credit a {
+  color: rgba(13, 7, 66, 1);
+}
+
+.credit a:hover {
+  color: rgb(255, 126, 25);
+}
 
 /* main section */
 
@@ -284,10 +291,11 @@ a.code-link:hover {
   rgba(0, 89, 255, 0.6),
     rgba(13, 7, 66, 1));
     height: 100vh;
+    color: rgba(186, 227, 247, 1);
 }
 
 .header-container {
-  background: rgba(230, 222, 5, 0.85);
+  background: rgba(28, 162, 230, 0.3);
   border-bottom: 2px groove rgba(13, 7, 66, 1);
   height: 25vh;
   max-height: 200px;
@@ -311,8 +319,69 @@ a.code-link:hover {
   margin: 0 2vw
 }
 
+.contact-main {
+  margin: 2.5vh auto;
+}
+
+.contact-info-outer {
+  height: 70vh;
+  width: 90%;
+  /* background-color:rgba(13, 225, 255, 0.5); */
+  /* background: rgba(13, 255, 13, 0.7); */
+  background: rgb(13, 7, 66);
+  border-radius: 10px; 
+  margin: auto;
+  border: 3px ridge rgba(0, 89, 255, 1);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-contact {
+  text-decoration: none;
+  color: rgb(250, 13, 123);
+}
+
+.email-contact:hover {
+  color: rgb(13, 255, 134);
+  scale(1.2);
+}
+}
 
 
+/* About Me section */
+
+.about-container {
+  background-image: linear-gradient(to bottom,
+  rgba(0, 89, 255, 0.6),
+    rgba(13, 7, 66, 1));
+    height: 100vh;
+  
+
+    color: rgba(186, 227, 247, 1);
+}
+
+.about-intro {
+  display: inline-block;
+
+}
+
+.about-info-outer {
+  /* display: inline-flex; */
+
+}
+
+.image-container {
+  max-width: 30%;
+  display: fixed;
+  
+}
+
+#myImage {
+  width: 20vw;
+  border-radius: 50%;
+}
 
 
 
