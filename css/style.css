@@ -56,6 +56,7 @@ nav {
   display: flex;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .header-nav {
@@ -296,9 +297,10 @@ a.code-link:hover {
 
 .header-container {
   background: rgba(28, 162, 230, 0.3);
-  border-bottom: 2px groove rgba(13, 7, 66, 1);
-  height: 25vh;
+  border-bottom: 2px ridge rgba(13, 7, 66, 1);
   max-height: 200px;
+  display: flex;
+  align-content: center;
 }
 
 .header-container a {
@@ -306,17 +308,15 @@ a.code-link:hover {
   align-items: center;
 }
 
-#contact {
+#logo {
   font-family: "Kaushan Script", 'Courier New', Courier, monospace;
-  margin: 0;
+  margin: auto;
   padding-left: 1em;
   font-size: 4vw;
 }
 
-.contact-header-rule {
-  border: 4px solid rgba(13, 7, 66, 1);
-  border-radius: 6px;
-  margin: 0 2vw
+.nav-alt {
+  margin-right: 20px;
 }
 
 .contact-main {
@@ -341,46 +341,70 @@ a.code-link:hover {
 .email-contact {
   text-decoration: none;
   color: rgb(250, 13, 123);
+  font-size: 1.6em;
 }
 
 .email-contact:hover {
   color: rgb(13, 255, 134);
-  scale(1.2);
-}
 }
 
 
 /* About Me section */
 
-.about-container {
-  background-image: linear-gradient(to bottom,
-  rgba(0, 89, 255, 0.6),
-    rgba(13, 7, 66, 1));
-    height: 100vh;
-  
-
-    color: rgba(186, 227, 247, 1);
-}
-
-.about-intro {
-  display: inline-block;
-
-}
-
-.about-info-outer {
-  /* display: inline-flex; */
-
-}
+.about-container {}
 
 .image-container {
-  max-width: 30%;
-  display: fixed;
-  
+  width: 80%;
+  display: inline-flex;
+  margin-top: 1vh;
 }
 
 #myImage {
   width: 20vw;
   border-radius: 50%;
+  max-width: 300px;
+}
+
+.about-intro {
+  margin-left: 30px;
+}
+
+.about-info-outer {
+  /* display: inline-flex; */
+background-image: linear-gradient(to bottom,
+  rgba(0, 89, 255, 0.6),
+    rgba(13, 7, 66, 1));
+    height: 100%;
+    color: rgba(186, 227, 247, 1);
+    padding: 3vw;
+    line-height: 1.4;
+}
+
+.about-text-container {
+  width: 60%;
+  margin: auto;
+}
+
+.goal {
+  font-size: larger;
+  font-weight: 700;
+  padding: 2vh 0;
+}
+
+.about-link {
+  color: rgb(250, 177, 90);
+}
+
+.about-link:hover {
+  color:rgb(13, 255, 134);
+}
+
+.history {
+  margin-top: 6vh;
+}
+
+article h3 {
+  margin-bottom: 0;
 }
 
 
@@ -427,7 +451,14 @@ a.code-link:hover {
     justify-content: space-around;
     flex-flow: column wrap;
   }
+  #logo {
+    font-size: 50px;
+    padding-left: 0;
+  }
+
 }
+
+
 
 @media only screen and (max-width: 530px) {
   header p:first-of-type {
@@ -466,7 +497,17 @@ a.code-link:hover {
   .social-icon {
     margin: 0 20px;
   }
-  
+  .nav-alt {
+    transform: scale(0.6);
+    justify-self:;
+  }
+  .contact-info-outer {
+    transform: scale(0.9);
+    padding: 20px;
+  }
+  .email-contact {
+    transform: scale(0.6)
+  }
   .nav-footer {
     width: 300px;
     margin: auto;
@@ -479,6 +520,19 @@ a.code-link:hover {
   }
 }
 
+@media only screen and (max-width: 590px) {
+  #logo {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-height: 400px) {
+  #title {
+    padding-top: 100px;
+  }
+  .email-contact {
+    font-size: 10px;
+  }
+}
 @media only screen and (max-width: 330px) {
   .project-card h4 {
     font-size: 1em;
@@ -487,8 +541,5 @@ a.code-link:hover {
   }
 }
 
-@media only screen and (max-height: 400px) {
-  #title {
-    padding-top: 100px;
-  }
-}
+
+
