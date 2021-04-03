@@ -6,7 +6,7 @@
 
 
 html, body {
-  font-size: 16px;
+  font-size: 1vw;
   font-family: Montserrat, sans-serif;
   margin: 0;
 	padding: 0;
@@ -289,19 +289,20 @@ a.code-link:hover {
 
 .contact-container {
   background-image: linear-gradient(to bottom,
-  rgba(0, 89, 255, 0.6),
+  rgba(0, 89, 255, 0),
     rgba(13, 7, 66, 1));
     height: 100vh;
+    
     color: rgba(186, 227, 247, 1);
 }
 
-.header-container {
+/* .header-container {
   background: rgba(28, 162, 230, 0.3);
   border-bottom: 2px ridge rgba(13, 7, 66, 1);
   max-height: 200px;
   display: flex;
   align-content: center;
-}
+} */
 
 .header-container a {
   color:rgba(13, 7, 66, 1);
@@ -315,9 +316,9 @@ a.code-link:hover {
   font-size: 4vw;
 }
 
-.nav-alt {
+/* .nav-alt {
   margin-right: 20px;
-}
+} */
 
 .contact-main {
   margin: 2.5vh auto;
@@ -354,24 +355,25 @@ a.code-link:hover {
 .about-container {}
 
 .image-container {
-  width: 80%;
+  width: 100%;
   display: inline-flex;
   margin-top: 1vh;
+  justify-content: center;
 }
 
 #myImage {
-  width: 20vw;
+  width: 30vw;
   border-radius: 50%;
   max-width: 300px;
 }
 
 .about-intro {
-  margin-left: 30px;
+  text-align: center;
 }
 
 .about-info-outer {
   /* display: inline-flex; */
-background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(to bottom,
   rgba(0, 89, 255, 0.6),
     rgba(13, 7, 66, 1));
     height: 100%;
@@ -381,9 +383,18 @@ background-image: linear-gradient(to bottom,
 }
 
 .about-text-container {
-  width: 60%;
+  width: 70%;
+  display:flex;
+  flex-direction: column;
   margin: auto;
 }
+
+.about-text-container p, li {
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.7;
+}
+
 
 .goal {
   font-size: larger;
@@ -399,12 +410,84 @@ background-image: linear-gradient(to bottom,
   color:rgb(13, 255, 134);
 }
 
-.history {
+/* .history {
   margin-top: 6vh;
 }
 
 article h3 {
   margin-bottom: 0;
+} */
+
+
+.skill-row {
+  width: 100%;
+  margin: 100px 1vw;
+  text-align: left;
+  line-height: 2;
+}
+
+.programming-img,
+.restaurants-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.renewable-img, 
+.sociology-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+.contact-me {
+  text-align: center;
+  padding-top: 4vh;
+}
+
+.contact-me p {
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: 300;
+  padding: 2vh;
+  -webkit-box-shadow: 1px 1px 5px 0 #000000;
+  -moz-box-shadow: 1px 1px 5px 0 #000000;
+  box-shadow: 1px 1px 5px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 
@@ -412,6 +495,7 @@ article h3 {
 /* Responsive display settings */
 
 @media only screen and (max-width: 800px) {
+  
   .header-nav {
     transform: scale(0.6);
     padding-bottom: 20px;
@@ -452,10 +536,16 @@ article h3 {
     flex-flow: column wrap;
   }
   #logo {
-    font-size: 50px;
-    padding-left: 0;
+    opacity: 0;
   }
-
+  .about-text-container {
+    width: 80%;
+  }
+  .about-text-container p, li {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    text-align: none;
+  }
 }
 
 
